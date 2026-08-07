@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+header {
+    display: flex;
+}
+
+header > span{
+    width: 15%;
+    text-align: center;
+}
+
 .nav-section {
-    width: 100%;
+    width: 85%;
     background-color: greenyellow;
 }
 
