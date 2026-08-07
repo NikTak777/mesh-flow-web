@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #e0c1e3;
+    min-width: 100vh;
+}
+
 header {
     display: flex;
     min-height: 70px;
@@ -34,6 +39,8 @@ header > span{
     font-size: 1.1rem;
 }
 
-li > a {
+.nav-item > a {
     text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px;
 }
