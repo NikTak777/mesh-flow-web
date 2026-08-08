@@ -9,14 +9,14 @@ body {
     min-width: 100vh;
 }
 
-header {
+header, footer {
     display: flex;
     min-height: 70px;
     align-items: center;
     background-color: greenyellow;
 }
 
-header > span{
+header > span {
     width: 15%;
     text-align: center;
     font-weight: bold;
@@ -43,4 +43,9 @@ header > span{
     text-decoration: none;
     display: inline-block;
     padding: 20px 20px;
+}
+
+footer > span {
+    width: 100%;
+    text-align: center;
 }
