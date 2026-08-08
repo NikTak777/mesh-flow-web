@@ -6,7 +6,7 @@
 
 body {
     background-color: #e0c1e3;
-    min-width: 100vh;
+    min-height: 100vh;
 }
 
 header, footer {
@@ -43,6 +43,22 @@ header > span {
     text-decoration: none;
     display: inline-block;
     padding: 20px 20px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 25px;
+}
+
+.search-bar {
+    margin: 15px 15px;
+    height: 30px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 footer > span {
