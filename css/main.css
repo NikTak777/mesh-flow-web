@@ -7,6 +7,8 @@
 body {
     background-color: #e0c1e3;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -48,6 +50,7 @@ header > span {
 main {
     width: 60%;
     margin: 0 auto;
+    flex: 1;
 }
 
 .search-section {
@@ -93,6 +96,20 @@ main {
     border-radius: 15px;
     width: 20%;
     margin-top: 15px;
+}
+
+.posts-list {
+    background-color: aqua;
+    margin: 30px auto;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+.posts-list > article {
+    margin-top: 15px;
+    background-color: rgb(250, 209, 2);
+    padding: 15px;
+    border-radius: 15px;
 }
 
 footer > span {
