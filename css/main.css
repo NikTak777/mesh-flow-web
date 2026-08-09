@@ -11,7 +11,7 @@ body {
     flex-direction: column;
 }
 
-header, footer {
+body > header, body > footer {
     display: flex;
     min-height: 70px;
     align-items: center;
@@ -92,6 +92,7 @@ main {
     min-height: 80px;
     max-height: 250px;
     resize: vertical;
+    padding: 15px;
 }
 
 .create-post > button {
