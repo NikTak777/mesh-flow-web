@@ -84,13 +84,13 @@ const mockPosts = [
 const feedContainer = document.getElementById('post-list');
 
 function renderPosts(postsArray) {
-    feedContainer.innerHTML = '';
+    feedContainer.innerHTML = '<h2>Лента рекомендаций</h2>';
 
     postsArray.forEach(post => {
         const postHTML = `
             <article class="post">
                 <header class="post-header">
-                    <span class="channel-name">${post.channelName}</span>
+                    <span class="channel-name">${post.channelName} ● </span>
                     <span class="post-time">${post.timeAgo}</span>
                 </header>
                 <div class="post-content">
