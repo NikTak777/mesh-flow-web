@@ -18,7 +18,7 @@ body > header, body > footer {
     background-color: greenyellow;
 }
 
-header > span {
+header > h1 {
     width: 230px;
     text-align: center;
     font-weight: bold;
