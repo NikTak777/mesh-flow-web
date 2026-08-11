@@ -25,6 +25,11 @@ header > h1 {
     font-size: 1.8rem;
 }
 
+h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-section {
     width: 85%;
 }
@@ -38,13 +43,14 @@ header > h1 {
 .nav-item {
     flex: 1;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .nav-item > a {
     text-decoration: none;
     display: inline-block;
     padding: 20px 20px;
+    color: black;
 }
 
 main {
