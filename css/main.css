@@ -78,7 +78,7 @@ main {
     display: flex;
     align-items: center;
     background-color: aqua;
-    margin: 30px auto;
+    margin-top: 30px;
     border-radius: 25px;
 }
 
@@ -103,6 +103,7 @@ main {
     background-color: aqua;
     border-radius: 25px;
     padding: 15px;
+    margin-top: 30px;
 }
 
 .create-post > textarea {
