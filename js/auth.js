@@ -1,6 +1,7 @@
 const loginForm = document.getElementById('login-form')
 const emailInput = document.getElementById('email-input')
 const passwordInput = document.getElementById('password-input')
+const backBtn = document.getElementById('back-btn')
 
 const userData = {
     email: 'admin@admin.com',
@@ -21,4 +22,10 @@ loginForm.addEventListener('submit', function(event) {
         alert('Вход успешно выполнен!')
         window.location.href = 'index.html'
     }
+})
+
+backBtn.addEventListener('click', function(event) {
+    event.preventDefault()
+
+    window.location.href = 'index.html'
 })

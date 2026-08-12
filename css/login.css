@@ -47,11 +47,22 @@ input {
     padding-left: 10px;
 }
 
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
 button {
     margin-top: 15px;
-    width: 100px;
+    align-self: flex-start;
+    padding: 0 15px;
     height: 30px;
     border-radius: 15px;
+}
+
+.back-btn {
+    align-self: flex-end;
+    margin-left: auto;
 }
 
 .login-footer {
