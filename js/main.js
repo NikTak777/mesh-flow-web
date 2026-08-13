@@ -109,3 +109,15 @@ function renderPosts(postsArray) {
 }
 
 renderPosts(mockPosts);
+
+const getPosts = async () => {
+    try {
+        const response = await fetch('http://127.0.0.1:8000/v1/post');
+        console.log("Ответ сервера: ", response)
+    }
+    catch {
+        console.log('Не удалось получить ответ от сервера!')
+    }
+}
+
+getPosts()
