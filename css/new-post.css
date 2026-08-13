@@ -1,0 +1,36 @@
+.create-post > form {
+    display: flex;
+    flex-direction: column;
+}
+
+form > label {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+form > input {
+    margin-top: 5px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+form > textarea {
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 80px;
+    max-height: 250px;
+    resize: vertical;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+form > button {
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+}

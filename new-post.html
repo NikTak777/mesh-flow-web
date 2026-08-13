@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeshFlow - Создание поста</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/new-post.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">MeshFlow</a>
+        </h1>
+        <nav class="nav-section">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Главная</a></li>
+                <li class="nav-item"><a href="new-post.html" style="text-decoration: underline;">Новый пост</a></li>
+                <li class="nav-item"><a href="index.html">О нас</a></li>
+            </ul>
+        </nav>
+        <div class="profile-section">
+            <span>Профиль</span>
+            <a href="login.html">Войти</a>
+        </div>
+    </header>
+    <main>
+        <section class="create-post">
+            <h2>Создание нового поста</h2>
+            <form id="create-post-form">
+                <label for="new-post-title">Заголовок</label>
+                <input type="text" id="new-post-title" placeholder="Заголовок поста">
+                <label for="new-post-description">Описание</label>
+                <textarea id="new-post-description" placeholder="Заголовок поста"></textarea>
+                <button type="submit">Опубликовать</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>© 2026 MeshFlow</span>
+    </footer>
+    <script src="js/feed.js" type="module"></script>
+</body>
+</html>

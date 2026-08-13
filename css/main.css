@@ -25,8 +25,13 @@ header > h1 {
     font-size: 1.8rem;
 }
 
+h1 > a {
+    text-decoration: none;
+    color: black;
+}
+
 .nav-section {
-    width: 85%;
+    width: 70%;
 }
 
 .nav-list {
@@ -38,13 +43,28 @@ header > h1 {
 .nav-item {
     flex: 1;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .nav-item > a {
     text-decoration: none;
     display: inline-block;
     padding: 20px 20px;
+    color: black;
+}
+
+.profile-section {
+    width: 15%;
+    flex-direction: column;
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.profile-section > a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: rgb(66, 66, 66);
 }
 
 main {
@@ -58,7 +78,7 @@ main {
     display: flex;
     align-items: center;
     background-color: aqua;
-    margin: 30px auto;
+    margin-top: 30px;
     border-radius: 25px;
 }
 
@@ -83,6 +103,7 @@ main {
     background-color: aqua;
     border-radius: 25px;
     padding: 15px;
+    margin-top: 30px;
 }
 
 .create-post > textarea {

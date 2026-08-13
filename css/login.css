@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.login-section {
+    width: 500px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 > a {
+    text-decoration: none;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+input {
+    margin-top: 5px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-top: 15px;
+    align-self: flex-start;
+    padding: 0 15px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.back-btn {
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.login-footer {
+    margin-top: 10px;
+}
