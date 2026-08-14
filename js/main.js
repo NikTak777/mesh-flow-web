@@ -45,3 +45,33 @@ getPosts()
 profileIcon.addEventListener('click', function(event) {
     profileDropdown.classList.toggle('active')
 })
+
+logOutBtn.addEventListener('click', function(event) {
+    localStorage.removeItem('access_token')
+    window.location.href = 'index.html'
+})
+
+const profileEmail = document.getElementById('profile-email')
+
+const getUserData = async () => {
+    const token = localStorage.getItem('access_token')
+    if (token !== null) {
+        console.log('Токен пользователя:', token)
+
+        const response = await fetch(
+            'http://127.0.0.1:8000/v1/auth/me',
+            {
+                method: 'GET',
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            }
+        )
+
+        const userData = await response.json()
+        console.log(userData)
+        profileEmail.textContent = userData["email"]
+    }
+}
+
+getUserData()
