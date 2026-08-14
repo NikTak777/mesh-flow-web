@@ -55,16 +55,35 @@ h1 > a {
 
 .profile-section {
     width: 15%;
-    flex-direction: column;
     display: flex;
+    flex-direction: row;
     font-size: 1.2rem;
     align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.profile-section > a {
+.profile-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name > a {
     text-decoration: none;
     font-size: 1.4rem;
     color: rgb(66, 66, 66);
+    text-align: center;
+}
+
+.profile-icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 115, 241);
+    color:white;
+    justify-content: center;
+    align-items: center;
 }
 
 main {
