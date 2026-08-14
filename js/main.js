@@ -1,7 +1,10 @@
-const feedContainer = document.getElementById('post-list');
+const feedContainer = document.getElementById('post-list')
+const profileIcon = document.getElementById('profile-icon')
+const profileDropdown = document.getElementById('profile-dropdown')
+const logOutBtn = document.getElementById('logout-btn')
 
 function renderPosts(postsArray) {
-    feedContainer.innerHTML = '<h2>Лента рекомендаций</h2>';
+    feedContainer.innerHTML = '<h2>Лента рекомендаций</h2>'
 
     postsArray.forEach(post => {
         const postHTML = `
@@ -38,3 +41,7 @@ const getPosts = async () => {
 }
 
 getPosts()
+
+profileIcon.addEventListener('click', function(event) {
+    profileDropdown.classList.toggle('active')
+})
