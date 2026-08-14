@@ -55,16 +55,84 @@ h1 > a {
 
 .profile-section {
     width: 15%;
-    flex-direction: column;
     display: flex;
+    flex-direction: row;
     font-size: 1.2rem;
     align-items: center;
+    justify-content: end;
+    padding-right: 15px;
+    gap: 15px;
 }
 
-.profile-section > a {
+.profile-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name > a {
     text-decoration: none;
     font-size: 1.4rem;
     color: rgb(66, 66, 66);
+    text-align: center;
+}
+
+.profile-icon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 115, 241);
+    color:white;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+    background-color:peru;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    top: 75px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 15px;
+}
+
+.profile-dropdown.active {
+    display: flex;
+}
+
+.logout-btn {
+    display: none;
+    height: 30px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+.logout-btn.active {
+    display: block;
+    height: 30px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+.auth-btn {
+    display: none;
+    height: 30px;
+    border-radius: 15px;
+    background-color:chartreuse;
+}
+
+.auth-btn.active {
+    display:block;
+    height: 30px;
+    border-radius: 15px;
+    background-color:chartreuse;
 }
 
 main {
