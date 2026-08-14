@@ -87,6 +87,7 @@ h1 > a {
     align-items: center;
     flex-shrink: 0;
     user-select: none;
+    cursor: pointer;
 }
 
 .profile-dropdown {
@@ -107,9 +108,31 @@ h1 > a {
 }
 
 .logout-btn {
+    display: none;
     height: 30px;
     border-radius: 15px;
     background-color: red;
+}
+
+.logout-btn.active {
+    display: block;
+    height: 30px;
+    border-radius: 15px;
+    background-color: red;
+}
+
+.auth-btn {
+    display: none;
+    height: 30px;
+    border-radius: 15px;
+    background-color:chartreuse;
+}
+
+.auth-btn.active {
+    display:block;
+    height: 30px;
+    border-radius: 15px;
+    background-color:chartreuse;
 }
 
 main {
